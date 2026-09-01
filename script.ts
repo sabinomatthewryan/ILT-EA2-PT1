@@ -41,5 +41,19 @@ const member2: GroupMember = {
     }
 };
 
+const member3: GroupMember = {
+    name: "Paula Mitchel Ng",
+    age: 21,
+    role: Role.Researcher,
+    active: true,
+    print() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Age: ${this.age}`);
+        console.log(`Role: ${Role[this.role]}`);
+        console.log(`Active: ${this.active}`);
+    }
+};
+
 member1.print();
 member2.print();
+member3.print();
