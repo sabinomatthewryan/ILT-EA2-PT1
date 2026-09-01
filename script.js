@@ -19,4 +19,17 @@ const member1 = {
         console.log(`Active: ${this.active}`);
     }
 };
+const member2 = {
+    name: "Nicko Dela Cruz",
+    age: 21,
+    role: Role.Tester,
+    active: true,
+    print() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Age: ${this.age}`);
+        console.log(`Role: ${Role[this.role]}`);
+        console.log(`Active: ${this.active}`);
+    }
+};
 member1.print();
+member2.print();
