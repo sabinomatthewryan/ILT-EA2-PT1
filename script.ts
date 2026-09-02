@@ -54,6 +54,19 @@ const member3: GroupMember = {
     }
 };
 
+const member4: GroupMember = {
+    name: "Jereign Lim",
+    age: 21,
+    role: Role.Developer,
+    active: true,
+    print() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Age: ${this.age}`);
+        console.log(`Role: ${Role[this.role]}`);
+        console.log(`Active: ${this.active}`);
+    }
+};
 member1.print();
 member2.print();
 member3.print();
+member4.print();
